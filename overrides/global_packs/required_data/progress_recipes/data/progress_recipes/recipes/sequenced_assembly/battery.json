@@ -1,3 +1,4 @@
+<<<<<<< HEAD:overrides/global_packs/required_data/progress_recipes/data/progress_recipes/recipes/sequenced_assembly/battery.json
 {
   "fabric:load_conditions": [
     {
@@ -105,4 +106,113 @@
     }
   ],
   "loops": 1
+=======
+{
+  "fabric:load_conditions": [
+    {
+       "condition": "fabric:all_mods_loaded",
+       "values": [
+         "indrev"
+       ]
+     }
+   ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:copper_plates"
+  },
+  "transitionalItem": {
+    "item": "create:copper_sheet"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "tag": "c:copper_plates"
+        },
+        {
+          "item": "create:brass_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "keepHeldItem": false
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "tag": "c:copper_plates"
+        },
+        {
+          "item": "powah:capacitor_basic"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "keepHeldItem": false
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "tag": "c:copper_plates"
+        },
+        {
+          "item": "indrev:nikolite_dust"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "keepHeldItem": false
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "tag": "c:copper_plates"
+        },
+        {
+          "tag": "c:copper_plates"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "keepHeldItem": false
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "tag": "c:copper_plates"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:copper_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "indrev:battery",
+      "count": 1,
+      "chance": 100
+    }
+  ],
+  "loops": 1
+>>>>>>> upstream/1.19.2:global_packs/required_data/progress_recipes/data/progress_recipes/recipes/sequenced_assembly/battery.json
 }

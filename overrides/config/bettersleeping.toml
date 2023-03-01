@@ -6,7 +6,7 @@ playersAsleepMessage = "{asleepPlayers}/{totalPlayers} ({asleepPercentage}%) pla
 notEnoughPlayersAsleepMessage = "{asleepPlayers}/{totalPlayers} ({asleepPercentage}%) players are now sleeping. {asleepPlayersAdditionallyNeeded} more required to skip the night!"
 messageFormatting = ["gold"]
 [buffs]
-applySleepBuffs = false
+applySleepBuffs = true
 regenerationDuration = 15
 regenerationLevel = 2
 [debuffs]

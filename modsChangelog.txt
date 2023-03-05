@@ -136,12 +136,14 @@ Fabric: 0.14.14 -> 0.14.17
 -- Fix: Incenses not rendering properly on Forge
 
 
-- ChoiceTheorem's Overhauled Village (CTOV): 3.1.5 -> 3.1.5a
+- ChoiceTheorem's Overhauled Village (CTOV): 3.1.5 -> 3.1.7
 - v.3.1.5a
 -- Fixed some crashing bugs
 - v.3.1.6
 -- Adding a platform for Vampirism integration.
-
+- v.3.1.7
+-- Adding compatibility with Friends and Foe
+-- Adding compatibility with Chef's delight
 
 - Cooking For Blockheads: 13.3.0 -> 13.3.1
 -- Fixed Croptopia Salt not being considered a food ingredient, and there not being cooked from water bottles

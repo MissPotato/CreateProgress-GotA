@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:overrides/global_packs/required_data/progress_recipes/data/progress_recipes/recipes/mechanical_crafting/ae_controller.json
+=======
+>>>>>>> UpstreamUpdate
 {
   "fabric:load_conditions": [
     {
@@ -45,17 +48,18 @@
     },
     "pattern":
     [
-        " DND ",
-        "GSCSG",
+        " GNG ",
+        "DSCSD",
         "NFPFN",
-        "GSCSG",
-        " DND "
+        "DSCSD",
+        " GNG "
     ],
     "result":
     {
         "count": 1,
         "item": "ae2:controller"
     }
+<<<<<<< HEAD
 =======
 {
   "fabric:load_conditions": [
@@ -115,4 +119,6 @@
         "item": "ae2:controller"
     }
 >>>>>>> upstream/1.19.2:global_packs/required_data/progress_recipes/data/progress_recipes/recipes/mechanical_crafting/ae_controller.json
+=======
+>>>>>>> UpstreamUpdate
 }

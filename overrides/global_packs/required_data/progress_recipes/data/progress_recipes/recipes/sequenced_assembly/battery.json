@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:overrides/global_packs/required_data/progress_recipes/data/progress_recipes/recipes/sequenced_assembly/battery.json
+=======
+>>>>>>> UpstreamUpdate
 {
   "fabric:load_conditions": [
     {
@@ -20,7 +23,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:copper_sheet"
+          "tag": "c:copper_plates"
         },
         {
           "item": "create:brass_sheet"
@@ -37,7 +40,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:copper_sheet"
+          "tag": "c:copper_plates"
         },
         {
           "item": "powah:capacitor_basic"
@@ -54,7 +57,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:copper_sheet"
+          "tag": "c:copper_plates"
         },
         {
           "item": "indrev:nikolite_dust"
@@ -71,10 +74,10 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "create:copper_sheet"
+          "tag": "c:copper_plates"
         },
         {
-          "item": "create:copper_sheet"
+          "tag": "c:copper_plates"
         }
       ],
       "results": [
@@ -88,7 +91,7 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "create:copper_sheet"
+          "tag": "c:copper_plates"
         }
       ],
       "results": [
@@ -106,6 +109,7 @@
     }
   ],
   "loops": 1
+<<<<<<< HEAD
 =======
 {
   "fabric:load_conditions": [
@@ -215,4 +219,6 @@
   ],
   "loops": 1
 >>>>>>> upstream/1.19.2:global_packs/required_data/progress_recipes/data/progress_recipes/recipes/sequenced_assembly/battery.json
+=======
+>>>>>>> UpstreamUpdate
 }

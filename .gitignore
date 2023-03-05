@@ -30,4 +30,8 @@ irisUpdateInfo.json
 config/NoChatReports
 servers.dat_old
 README.md
+<<<<<<< HEAD
 mods/
+=======
+mods/*.jar
+>>>>>>> UpstreamUpdate

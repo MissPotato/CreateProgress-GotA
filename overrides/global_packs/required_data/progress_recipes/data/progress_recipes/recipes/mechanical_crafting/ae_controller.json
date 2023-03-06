@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD:overrides/global_packs/required_data/progress_recipes/data/progress_recipes/recipes/mechanical_crafting/ae_controller.json
-=======
->>>>>>> UpstreamUpdate
 {
   "fabric:load_conditions": [
     {
@@ -59,66 +55,4 @@
         "count": 1,
         "item": "ae2:controller"
     }
-<<<<<<< HEAD
-=======
-{
-  "fabric:load_conditions": [
-    {
-       "condition": "fabric:all_mods_loaded",
-       "values": [
-         "indrev",
-         "powah",
-         "ae2"
-       ]
-     }
-   ],
-  "type": "create:mechanical_crafting",
-  "acceptMirrored": false,
-    "key":
-    {
-        "F":
-        {
-            "item": "ae2:fluix_crystal"
-        },
-        "S":
-        {
-            "item": "ae2:smooth_sky_stone_block"
-        },
-        "C":
-        {
-            "item": "indrev:circuit_mk2"
-        },
-        "D":
-        {
-            "item": "ad_astra:desh_plate"
-        },
-        "G":
-        {
-            "tag": "c:gold_plates"
-        },
-        "P":
-        {
-            "item": "ae2:engineering_processor"
-        },
-        "N":
-        {
-            "item": "indrev:nikolite_ingot"
-        }
-    },
-    "pattern":
-    [
-        " GNG ",
-        "DSCSD",
-        "NFPFN",
-        "DSCSD",
-        " GNG "
-    ],
-    "result":
-    {
-        "count": 1,
-        "item": "ae2:controller"
-    }
->>>>>>> upstream/1.19.2:global_packs/required_data/progress_recipes/data/progress_recipes/recipes/mechanical_crafting/ae_controller.json
-=======
->>>>>>> UpstreamUpdate
 }

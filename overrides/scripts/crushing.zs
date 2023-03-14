@@ -4,6 +4,7 @@ import crafttweaker.api.data.IData;
 import crafttweaker.api.data.ListData;
 import crafttweaker.api.util.random.Percentaged;
 
+print("Loading crushing.zs");
 
 function addCreateCrushing(name as string, itemIn as IIngredient, itemsOut as Percentaged<IItemStack>[]) as void {
   // deal with percentaged item stacks

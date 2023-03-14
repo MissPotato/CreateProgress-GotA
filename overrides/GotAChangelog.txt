@@ -1,4 +1,10 @@
-Progress Create: GotA Editions v0.4.1
+Progress Create: GotA Edition v0.4.1.2
+- Downgraded expanded storage
+- Fixed a few CT recipes
+- Added debug code to CT SCripts
+
+########################################################
+Progress Create: GotA Editions v0.4.1.1
 #GotA Additions#
 Short version of changes:
 - Blocks added by Ecologics will not show up in already existing chunks. Probably can get them with bonemeal.

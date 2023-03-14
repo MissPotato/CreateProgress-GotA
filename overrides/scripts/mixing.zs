@@ -3,6 +3,8 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.data.IData;
 import crafttweaker.api.data.ListData;
 
+print("Loading mixing.zs");
+
 public expand IIngredient[] {
   public as IData {
     var list = new ListData();

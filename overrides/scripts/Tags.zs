@@ -1,5 +1,7 @@
 import crafttweaker.api.tag.MCTag;
 
+print("Loading Tags.zs");
+
 <tag:blocks:c:ores>.add(<block:indrev:nikolite_ore>);
 <tag:blocks:c:ores>.add(<block:indrev:deepslate_nikolite_ore>);
 <tag:blocks:c:ores>.add(<block:indrev:tungsten_ore>);

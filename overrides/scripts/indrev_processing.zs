@@ -3,8 +3,10 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.IIngredientWithAmount;
 import crafttweaker.api.data.IData;
 
+print("Loading indrev_processing.zs");
+
 val zinc_ore = <tag:items:c:zinc_ores>;
-val zinc_raw = <tag:items:c:zinc_raw_materials>;
+val zinc_raw = <tag:items:c:raw_zinc_ores>;
 val zinc_ingot = <item:create:zinc_ingot>;
 val zinc_chunk = <item:kubejs:zinc_chunk>;
 val zinc_dust = <item:kubejs:zinc_dust>;

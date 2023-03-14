@@ -1,0 +1,101 @@
+Progress Create: GotA Edition v0.4.1.2
+- Downgraded expanded storage
+- Fixed a few CT recipes
+- Added debug code to CT SCripts
+
+########################################################
+Progress Create: GotA Editions v0.4.1.1
+#GotA Additions#
+Short version of changes:
+- Blocks added by Ecologics will not show up in already existing chunks. Probably can get them with bonemeal.
+- Wildlife expanded mainly because someone wanted seals, and I personally loved Ecoligic's snails.
+Chunk Sending should help the noticable lag spikes when people use waystones, go to the nether, etc. 
+
+
+- Added Mods
+-- Creatures from the Snow: Expands animal variety in snow biomes. (Namely adds seals) 
+-- Chunks Sending: Optimizes chunk loading for batch chunk loads. (IE: TPing and logging in)
+-- Naturalist: Expands animal variety in Grassy and Dry biomes.
+-- Ecologics: Expands animal and shrubbery variety in costal, deserts, snowy plains, lush caves
+
+
+- Updated Progress Create
+- 0.3.5 -> 0.4.1
+
+# Changelog for Progeess Create base pack #
+- Progress Create: 0.3.0 -> 0.3.5
+-- Changed: Several quest additions (mostly covering various utilities)
+-- Changed: Added Capsule recipe
+-- Changed: Added raw ore pulverizing recipes
+-- Changed: Added crushing recipes for getting space ores from stone
+-- Changed: Added flax seed purchasing
+
+- Progress Create: 0.3.5 -> 0.4.1
+-- Removed: Lanterns belong on walls (Soft incompatible with Supplimentaries) 
+-- Changed: Unified catwalk recipes
+-- Changed: Disabled corrupted lunarians, again
+-- Changed: Adjusted AE controller recipe to be more compatible with shared mechanical crafting setups
+-- Changed: Vastly increased mining rig power requirements
+-- Changed: Re-enabled Powah cables and energy cells
+-- Changed: Fix data card writer not dropping when broken
+########################################################
+Progress Create: GotA Editions v0.3.5
+#Upstream pack changes#
+- Progress Create: 0.1.5 -> 0.2.0
+-- Update factory blocks [1.0.0 -> 1.0.1]
+-- Added missing recipes for higher-tier energy storage cells
+-- Lowered reactor crafting requirements
+-- Fixed silicon recipe using the wrong press
+-- Hide uncrafting table recipes
+-- Add crushing recipes for geode blocks
+-- Remove Better Combat moveset from basic axes, and the terra sword
+-- Add ad astra ores to veinminer, and ochrum/crimsite
+
+- Progress Create: 0.2.0 -> 0.3.0
+-- Removed: Nullscape
+-- Added: Better End
+-- Added: Carry On (chests, drawers, and passive mobs only)
+-- Added: Supplementaries
+-- Added: Trash Cans
+-- Added: Block Limit Fixer
+-- Changed: Added Create and Indrev processing recipes for all the Ad Astra metals
+-- Changed: Added Crusher recipes to break down extra rockets into base materials (partial return)
+-- Changed: Minor quest fixes
+-- Changed: Onyx shard no longer requires a new moon, only midnight
+-- Changed: Increased sequenced assembly fluix cable recipe output
+-- Changed: Slightly reduced cost of waystone TP
+-- Changed: Reduced food history by 1
+-- Changed: Slightly increased health gain from eating more food
+-- Changed: Slightly reduced eating slowdown on recently-eaten foods
+-- Changed: Show better tooltips for recently-eaten foods
+-- Changed: Fixed Building Wands previews not working with shaders
+#End of Upsteam pack changes#
+
+
+#Beging GotA Additions#
+
+- Added Mods:
+-- Clay Soldiers: A port of the really old clay soldiers mod. 
+-- Connectivity: Allows configuring network level stuff, most importantly the time the client or server will time out the other for taking too long to connect. Useful for if a player has really bad connection to the server. (This is a bandaid fix, their connection will still be poor.)
+-- Crawl: adds a keybind to do vanilla's crawling on demand. Super useful for pipe networks.
+-- Immersive Paintings: Lets users create ingame vanilla-like paintings using web URLs. (I don't suggest adding this upstream, as the server actually downloads these images. Though the config is quite flexible.)
+-- Jade: Yet another port of WAYLA. This one has block harvestability. 
+-- Jade Addons: Lets Jade support more mods.
+-- Log Protection: Allows you to extend the time a player is shielded from any damage upon changing dimensions and logging in. Further expands the feature to make it so any player movement cancels the protection. Same idea as Connectivity.
+-- Lootr: Per player instanced loot chests. It can't replace containers that have already been opened, but handles unopened containers fine. Pruning chunks of course will work as well.
+-- Nature's Compass: A compass for finding biomes. 
+-- Now Playing: Adds a toast notification for minecraft's non-jukebox music. Jukeboxs already do something like this. 
+-- Portable Crafting: Crafting tables on a stick. 
+
+
+- Removed Mods:
+-- WTHIT: Replaced with Jade, adds more functionality, namely block harvestability
+-- Megane: Addon for WTHIT 
+-- Controlling: Only slightly better search than AMECS while breaking AMECS.
+-- BCLib, Better Nether, Better End: few players really didn't like it.  
+
+
+- Pack Update: 
+-- Merge PR for 0.3.1 with the pack. Changes below.
+-- See ChangelogFull for changes
+

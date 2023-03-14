@@ -3,6 +3,8 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.IIngredientWithAmount;
 import crafttweaker.api.data.IData;
 
+print("Loading compressing.zs");
+
 function addIndrevCompressing(name as string, itemIn as IIngredient, itemOut as IIngredient) as void {
   <recipetype:indrev:compress>.addJsonRecipe(name, {
     "type": "indrev:compress",

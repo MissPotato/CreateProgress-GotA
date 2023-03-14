@@ -1,3 +1,5 @@
+print("Loading removed_recipes.zs");
+
 // pipes
 craftingTable.remove(<item:indrev:fluid_pipe_mk1>);
 craftingTable.remove(<item:indrev:fluid_pipe_mk2>);
@@ -35,8 +37,6 @@ craftingTable.removeByRegex("powah:crafting.*chopper_.+");
 craftingTable.removeByRegex("powah:crafting.*farmer_.+");
 craftingTable.removeByRegex("powah:crafting.*slaughter_.+");
 craftingTable.removeByRegex("powah:crafting.*ender_cell_.+");
-craftingTable.removeByRegex("powah:crafting.*energy_cell_.+");
-craftingTable.removeByRegex("powah:crafting.*energy_cable_.+");
 craftingTable.removeByRegex("powah:crafting.*energy_gate_.+");
 
 craftingTable.remove(<item:ae2:controller>);

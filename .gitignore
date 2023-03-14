@@ -3,7 +3,6 @@
 .idea/
 .mixin.out/
 .fabric/
-mods/
 crash-reports
 journeymap
 logs
@@ -31,4 +30,9 @@ options.amecsapi.txt
 irisUpdateInfo.json
 config/NoChatReports
 servers.dat_old
-READNE.md
+README.md
+<<<<<<< HEAD
+mods/
+=======
+mods/*.jar
+>>>>>>> UpstreamUpdate

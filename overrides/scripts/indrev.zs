@@ -1,3 +1,5 @@
+print("Loading indrev.zs");
+
 val empty = <item:minecraft:air>;
 
 val flint = <item:minecraft:flint>;
@@ -95,6 +97,11 @@ flux_cell_mk1.addTooltip("Energy cell, a battery to store power");
 flux_cell_mk2.addTooltip("Energy cell, a battery to store power");
 flux_cell_mk3.addTooltip("Energy cell, a battery to store power");
 flux_cell_mk4.addTooltip("Energy cell, a battery to store power");
+
+craftingTable.addShaped("indrev_capsule", <item:indrev:capsule>, [
+	[tungsten_plate, 	glass, 	tungsten_plate],
+	[glass, 			empty, 	glass],
+	[steel_plate, 		glass, 	steel_plate]]);
 
 // generators
 craftingTable.remove(<item:indrev:coal_generator_mk1>);

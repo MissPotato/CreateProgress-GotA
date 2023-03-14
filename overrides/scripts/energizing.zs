@@ -3,6 +3,8 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.IIngredientWithAmount;
 import crafttweaker.api.data.IData;
 
+print("Loading Energizing.zs");
+
 function addPowahEnergizing(
   name as string, 
   itemsIn as IIngredient[], 

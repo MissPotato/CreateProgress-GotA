@@ -1,3 +1,4 @@
+print("Loading AE.zs");
 
 //aliases
 val iron = <item:minecraft:iron_ingot>;

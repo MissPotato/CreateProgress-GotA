@@ -2,6 +2,8 @@ val furnace = <item:minecraft:furnace>;
 val iron_ingot = <item:minecraft:iron_ingot>;
 val energized_steel = <item:powah:steel_energized>;
 
+print("Loading powah.zs");
+
 val battery = <item:indrev:battery>;
 val dielectric_paste = <item:powah:dielectric_paste>;
 val dielectric_casing = <item:powah:dielectric_casing>;

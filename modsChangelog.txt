@@ -3,266 +3,261 @@ Fabric: 0.14.14 -> 0.14.17
 
 
 #Updated APIs
-- Balm: 4.5.2 -> 4.5.6
-- v.4.5.4
--- Fixed race condition in dynamic model baking resulting in occasional crashes
--- Fixed sendToServer not checking for an active connection, resulting in errors with e.g. GravelMiner
--- Fixed OpenScreenEvent breaking screen replacements by other mods (e.g. when Hardcore Revival is used with Catalogue)
-- v.4.5.5
--- Fixed client-side options always being overwritten by the server
-- v.4.5.6
--- Fixed config failing to sync resulting in all kinds of weird errors
+- Bookshelf: 16.2.17 -> 16.2.18
+-- Change how block render layers are bound. May improve compatibility with mods like rubidium
 
+- Collective: 6.49 -> 6.53
+- v.6.50
+-- Added HashMapFunctions, which adds a custom computeIfAbsent function to add compatibility with threaded dimensions.
+- v.6.51
+--Fixed how Collective applies a tag to entities which originate from spawners used by dependent mods.
+- v.6.52
+-- Added KeyMappingFunctions, used to retrieve the private key field from a KeyMapping.
+- v.6.53
+-- Fixed Player Heads not being generated correctly
 
-- Collective: 6.48 -> 6.49
--- Changed how values in HashMaps are put. Instead of using an event, it uses the computeIfAbsent Java function.
--- This fixes incompatibilities with other mods creating dimensions/levels without using the event.
+- Continuity: 2.0.1 -> 2.0.2
+- Fix `matchBlocks` accepting at most one block state property per block
+- Fix empty `biomes` property value causing an error
+- Fix `weights` ranges accepting values less than 1
+- Fix `matchTiles` parsing resetting the sprite namespace if the path does not contain a slash
+- Only convert unspecified sprite location namespace when path starts with "optifine/"
+- Remove `weight` property
+- Add `prioritize` boolean property
+- Add `optifineOnly` boolean property
+- Add `disableSolidCheck` boolean property to `block.properties` for better Optifine parity
+- Fix `ctm_compact` not replacing sprite in no-split case
+- Fix `random` sometimes getting block states more than two positions away from the origin position
+- Add compatibility for CIT Resewn emissive textures
+- Fix block emissives checking the wrong feature state
+- Disable connected and emissive textures for blocks being moved by pistons
+- Add Czech translation
+- Add Korean translation
+- Add Portuguese translation
+- Add Tagalog translation
+- Add Ukrainian translation
+- Update German translation
 
-
-- Fabric API: 0.73.2 -> 0.75.1
-- v.0.75.0
+- Fabric Language Kotlin: 1.9.1 -> 1.9.2
 -- Bump version (modmuss50)
--- Indigo shade related fixes and other changes (#2898) (PepperCode1)
-- v.0.75.1
--- Bump version (modmuss50)
--- Fix #2925: deprecate item functions in BlockRenderLayerMap (#2930) (Technici4n)
+-- Update versions (#102) (github-actions[bot], github-actions)
+-- Update readme (github-actions)
 
+- FTB Library: 3.14.184 -> 3.15.188
+-- Merge pull request #65 from FTBTeam/1.19/dev - desht
+-- build: version -> 1902.3.15 - Des Herriott
+-- fix: attempt 2 at fixing ftblib/rei init crash - Des Herriott
+-- fix: fix crash on init when REI is present - Des Herriott
 
-- FTB Library 3.13 -> 3.14
--- Merge pull request #64 from FTBTeam/1.19/dev - desht
--- fix: fix crash on invalid arg to ClientUtils#handleClick - Des Herriott
--- fix: run client commands signed and post a chat event - Des Herriott
--- fix: image selector image location handling fixup - Des Herriott
--- fix: inverted check for fluid source - Des Herriott
+- Moonlight Lib: 2.2.13 -> 2.2.19
+-- No changelog provided 
 
+- Resourceful Lib: 1.1.22 -> 1.1.23
+-- No changelog provided
 
-- Moonlight Lib: 2.2.8 -> 2.2.13
-- v.2.2.10
--- Fixed last version recipe conditions screw up
-- v.2.2.12
--- Rolled back one model change meant to fix one issue, instead broke stuff even more
-- v.2.2.13
--- Added minecraft:mineable/shear tag which controls blocks that can be mined faster and drop with shears
--- Added some registry access sensitive reload listeners class
--- improved some fluid stuff
+-Revelationary: 1.3.0 -> 1.3.2
+-- Added a new advancement criterion "advancement_count". It can match gotten advancements with min/max counts.
+-- Invalid revelations now log an error
 
-
-- Pehkui: 3.6.3 -> 3.7.0
--- Additions:
--- API for other mods to look up existing scale operations/operators
--- Bugfixes:
--- Fix nameplate height when scaled
--- Fix scaled Armor Stand interaction areas
--- Potential fixes for interacting with very wide entities
-
-
-- playerAnimator: 0.4.2 -> 1.0.2
-- v.1.0.0
--- First Person animation
-- v.1.0.1
--- Fix crash when spectating non-player entities
-- v.1.0.2
--- Fix render issue with first person
-
-
-- YungsAPI: 3.8.6 -> 3.8.8
-- v.3.8.7
--- Added delay_generation action type.
--- Added random_chance structure condition type.
--- StructureModifiers now use 'actions' field instead of singular 'action'.
--- StructureTargetSelectors now return a list of PieceEntry's instead of an Optional.
--- Changed piece_in_horizontal_direction wildcard to 'yungsapi:all' to match other conditions.
--- Fixed piece search conditions erroneously passing if they had internal jigsaw pieces.
--- Fixed deadend pieces not properly updating stored piece counts when removing previous piece.
--- Fixed TransformAction not properly updating stored PieceEntry with the new piece's bounding box.
--- Fixed piece counts not being updated when deadend pool is used.
--- Small optimizations & null checks to some conditions.
-- v.3.8.8
--- Fixed jigsaw bounding box bug cutting off surface structures. 
-
+- YUNG's API: 3.8.8 -> 3.8.9
+-- Added new yung_feature_element pool element type. Most fields and options previously exclusive to YungJigsawSinglePoolElement are now abstracted to parent YungJigsawPoolElement class.
 
 #Updated Mods
-- Ad Astra: 1.12.3 -> 1.12.4
--- added some new plating and stone textures
--- added tags "passes_flood_fill" and "blocks_flood_fill" to allow for more control over what blocks are sealed
--- added vents. new blocks that allow oxygen to pass through
--- changed the space suit recipes to use normal glass instead of orange stained glass
--- fixed being damaged by acid rain while in a rocket (RIP Direwolf20)
--- increased space suit durability
--- lunarian villages now have aeronos and strophar mushroom wood instead of warped wood allowing you to use it in survival
--- new globe models
--- removed fabric loader version requirement which should fix some quilt versions
--- increased desh, ostrum and calorite ore veins per chunk
--- reduced cryo freezer energy requirement
--- updated flood fill algorithm to better seal blocks based on voxel shape
--- fix lunarian wandering traders selling 9 launchpads when they should only sell 1
--- lunarian wandering traders now sell aeronos stems, strophar stems, glacian logs, and glacian leaves. (glacian wood is now obtainable in survival mode)
--- added Ukrainian translations (thanks to @Unroman)
--- updated Korean translations (thanks to @Giselle)
--- updated Russian translations (thanks to @Gigachad)
--- fixed pipes not present in creative menu (#183)
--- fixed pipes and cables being able to insert into their source block causing an infinite loop (maybe fixes #186 and #193)?
--- fixed pipes crashing create (#195)
--- fixed extinguished stuff still producing light (#197)
--- fixed config being loaded too late causing issues like the hammer durability not being applied on Forge (#207)
--- fixed crash after using blink+decoy spell in space (Ars Nouveau) (#208)
--- fixed solar panels crashing server (#210)
--- fixed oxygen still being consumed underwater with water breathing (#217)
+- Ad Astra: 1.12.4 -> 1.12.5
+-- diesel and biodiesel from other mods can now be used as fuel.
+-- Water Pump now distributes water to nearby machines in all directions instead of just up and the facing direction.
+-- doubled oxygen distributor conversion rate
+-- fixed spawn placements not being registered causing mobs to spawn anywhere regardless of light level and ground present
+-- fixed oxygen distributor being capped at 2000 blocks despite max being 3000.
+-- fix crash with pipes trying to get a direction value that doesn't exist
+-- space suits can now be undyed in a cauldron
+-- space suit items are now colored based on their dyed color
+-- fixed fluid translation issue (#89)
+-- added config to disable taking damage in rockets (#199)
+-- fixed rare crash with oxygen distributors and sliding doors (maybe fixes #227)?
+-- fixed water not freezing despite being cold enough (#228)
+-- fixed issues with vents (#231)
+-- fixed waterlogged blocks getting deleted by the water pump (#236)
 
+- Better Combat: 1.6.1 -> 1.6.2
+-- Update claymore pose
+-- Update Forge mods.toml
+-- Add Ukrainian translation, thanks to un_roman
 
-- Better Combat: 1.5.5 -> 1.6.1
-- v.1.6.0
--- First Person animations are now performed by PlayerAnimator library
--- Combo reset time is now server configurable
--- Fix Forge launch crash when PlayerAnimator is missing (now a proper error screen is shown)
--- Fix over filtering particle effects #198
--- Fix players shadows missing in first person (when using shaders)
--- Improve attack animation vertical rotation adjustment
--- API Changes:
--- Add MinecraftClient extension isWeaponSwingInProgress #194
--- Add new client events: BetterCombatClientEvents.ATTACK_START, BetterCombatClientEvents.ATTACK_HIT
--- Remove first person animation package, this functionality is now served by PlayerAnimator
-- v.1.6.1
--- Fix First Person Model integration
+- CT Overhauled  Vilages: 3.1.7 -> 3.1.8
+-- Beautify compatibility added
 
+- Client Tweaks: 8.1.0 -> 8.1.1
+-- Fixed Disable Log Stripping tweak also disabling other interaction while holding an axe
+-- Fixed Recipe Book closing when an item is clicked if No Recipe Book Shifting is enabled
 
-- Botania: 437 -> 438
--- The about damn time update :) 
--- Change: Tweaks to the Dandelifeon’s rules; if you space them well, you can make very large setups :)
--- Change: The Corporea Spark recipe makes 4 now. Good riddance.
--- Fix: zh_CN updates (Clayblockunova)
--- Fix: Banner patterns being broken on Forge
--- Fix: Missing Sunny Quartz destruction recipe
--- Fix: Incenses not rendering properly on Forge
+- CraftTweaker: 10.1.36 -> 10.1.38
+- v.10.1.37
+-- add server.playerList - Jared - Wed Mar 8 21:31:18 2023
+- v.10.1.38
+-- Create fr_fr.json (#1628) - Calvineries - Fri Mar 10 22:48:49 2023
 
+- Easy Anvils: 4.0.6 -> 4.0.10
+- v4.0.7
+-- Easy Anvil now is much more careful when applying any changes to anvil mechanics in regard to other mods
+-- All changes to those mechanics from any other mod take precedence (like a new anvil recipe), Easy Anvils only takes effect if the outcome would be the same as vanilla
+-- This change is necessary to offer out-of-the-box compatibility with many mods which previously broke due to Easy Anvils
+- v4.0.8
+-- Fixed a crash when right-clicking anvils on Forge introduced in the last version
+- v4.0.9
+-- Easy Anvils now internally converts formatted item names to Minecraft's component based text format for saving instead of saving raw strings using the legacy chat formatting format
+-- This change should help with other mods that see § as an invalid character in item names, causing issues
+-- Overhauled the anvil rename edit box with a lot of useful text manipulation features, included as an experimental feature to test as a possible future standalone text box enhancement mod
+-- Most features are modelled after text handling on macOS, not everything is implemented yet (notably missing right now is double-click+dragging to select individual words)
+-- Right-click the edit box to clear
+-- Double-click a word to select that word
+-- Triple-click anywhere in the box to select everything
+-- Click+drag across text to select all characters dragged above
+-- Alt+Delete to delete the word left of the cursor
+-- Ctrl/Cmd+Delete to delete all characters left of the cursor
+-- Alt+Left Arrow/Right Arrow to move between words
+-- Ctrl/Cmd+Left Arrow/Right Arrow to move to the beginning/end of the text box
+-- Shift+Alt+Left Arrow/Right Arrow to select individual words
+-- Shift+Ctrl/Cmd+Left Arrow/Right Arrow to select everything to the beginning/end of the text box
+-- Fixed a crash when right-clicking anvils on Forge for real this time
+-- Fixed a crash when entering Emojis into the anvil rename / name tag edit box
+-- Fixed the anvil rename / name tag edit box allowing fewer characters than vanilla when formatting codes are used
+- v4.0.10
+-- Renaming / repairing no longer accounts for the prior work penalty of an item
+--The 'Too Expensive!' limit is now disabled by default once more
+-- Overhauled server config file
+-- Separated all options into three categories
+-- Added a few new options for controlling different costs, like multipliers for enchantment rarities and repairs
+-- Improved many descriptions to hopefully be easier to understand
+-- Fixed an issue where the 'Too Expensive!' label wouldn't show
 
-- ChoiceTheorem's Overhauled Village (CTOV): 3.1.5 -> 3.1.7
-- v.3.1.5a
--- Fixed some crashing bugs
-- v.3.1.6
--- Adding a platform for Vampirism integration.
-- v.3.1.7
--- Adding compatibility with Friends and Foe
--- Adding compatibility with Chef's delight
+- Fabric Waystone: 3.0.6 -> 3.0.7
+-- Fixed crash with JourneyMap with empty Waystone names
+-- Fixed Local Void animation breaking after 1st use
+-- Added recipe advancements and better recipe book integration (thanks Leeo97one)
+-- Some Waystone screen QoL improvements (thanks gliscowo)
+-- Added Ukrainian translations (thanks Altegar)
+-- Added Japanese translations (thanks PExPE3)
+-- Made it so that players get unmounted from the mob they're riding (if any) when teleporting
+-- Added toggle button for the search autoselect
+-- Potentially fixed some TPS issues when teleporting
+-- Fixed the wrong Waystone button being clicked when clicking on the edge of 2 buttons
+-- Made it so that the search filter type gets saved when closing the Waystone GUI
+-- Added a new search option: "subsequence search", which filters out Waystone names as long as all the letters of the original search are found (in the same order, with any other letters inbetween)
+-- Fixed Waystones taking forever to break and not dropping anything
+-- Added config option for generated Waystones (eg. village Waystones) to not be breakable
+-- Shift-hovering over Waystone names now shows the dimension they're in
+-- Both the top and bottom part of the Waystone should now be selectable in spectator mode
+-- Exposed some fields in WaystoneStorage (for easier mod compat)
 
-- Cooking For Blockheads: 13.3.0 -> 13.3.1
--- Fixed Croptopia Salt not being considered a food ingredient, and there not being cooked from water bottles
--- Fixed rotation and mirroring not being supported by kitchen blocks in structures
--- Fixed hanging corner not acting as a kitchen connector
+- Handcrafted: 2.0.2 -> 2.0.6
+- v.2.0.5
+-- added recipes for individually dying cushions and sheets
+-- fixed stackable books uncraftable on fabric (#11)
+-- fixed berry jars and stackable books always dropping 1 block (#14)
+-- fixed painting registration to fix #12
+-- added create cutting recipes for boards (creds: hazardjsimpson)
+- v.2.0.6
+-- fixed rendering crash with shelves and statues
 
+- ImmediatleyFast: 1.1.9 -> 1.1.10
+-- Added 1.19.4 support
+-- Improved performance of Iris compatibility interface
 
-- Creeper Overhaul: 2.0.7 ->  2.0.8
--- Fixed neutral creepers acting passive
+- JourneyMap: 5.9.3 -> 5.9.4
+-- Updated: Long dimension names over 25 characters are compressed.
+-- Mod Compat: ChinjufuMod leaves not rendering correctly.
+-- Fixed: MapSaver rendering weird blank images.
+-- Fixed: Slopes at 0 and below.
 
+- KleeSlabs: 12.1.0 -> 12.2.0
+-- Added dumpSlabs option to print out a list of blocks ending in _slab on world load
+-- Added support for Upgrade Aquatic slabs
+-- Added support for Oceanopolis slabs
+-- Updated Vanilla support to add new slabs
 
-- Easy Magic: 4.3.2 -> 4.3.3
--- Added
--- Added an option to make reroll catalysts separate from enchanting catalysts
--- This means rerolling no longer uses lapis lazuli, but a different dedicated item instead
--- When the option is enabled, a new slot is added to enchanting tables for the reroll item
--- Enchanting catalyst items are now defined by the easymagic:enchanting_catalysts item tag
--- Reroll catalyst items are now defined by the easymagic:reroll_catalysts item tag
--- Changed
--- The lenient bookshelves option now makes enchanting tables ignore all blocks that do not have a full block collision shape (like carpet) when counting bookshelves, before this would only ignore blocks without a collision shape (like torches)
+- Lithium: 0.4.10 -> 0.4.11.1
+- v.0.4.11
+-- new: remove vanilla temperature caching
+-- new: add automatically generated lithium-mixin-config.md
+-- new: testcase: closing fence gate updates llama pathfinding
+-- new: Lithium API for hopper-like item transfer cooldown
+-- fix: remove incorrect chunk ticket creation (#449) by ishland*
+-- fix: block.hopper.worldedit_compat: update hopper caching when placing block entities when world edit is loaded
+-- fix: block.hopper: broken interaction with modded non-BlockEntity Inventory blocks
+-- fix: incorrect ordering of collisions causing non-vanilla entity movement behavior
+-- fix: alloc.blockstate: allow State withTables using non Block/Fluid types
+-- fix: world.blockentityticking.sleeping: crash when /perf command prints position of sleeping block entity
+-- change: lithium config mod override parsing can be used with and without mixin. prefix
+-- change: use @Intrinsic annotation to improve mod compatibility
+-- change: rename chunk.blockcounting to util.blocktracking
+-- change: entity.collisions.movement: check block below entity before other collisions
+-- change: rename ai.poi.poi.tasks to ai.poi.tasks
+-- change: move mixin.world.blockentityretrieval to mixin.util.blockentityretrieval
+-- change: switch from old LithiumConfig system to mixin-config annotation system
+-- change: add null check in ChunkAwareBlockCollisionSweeper
+-- change: implement unused onEntryRemoved method in BitSet optimization for POI Storage
+-- change: entity.collisions.movement: handle external changes to list of collision shapes correctly
+-- change: disable ai.nearby_entity_tracking because it reduces performance in normal worlds
+-- change: ItemEntity and Inventory entities only notify movement trackers when hopper optimizations are present
+-- change: split ai.nearbyentitytracking into ai.nearbyentitytracking.goals and util.entitymovementtracking
+- v.0.4.11.1
+-- new: collections.fluid_submersion: Use faster collection and avoid FluidTag equality tests
+-- fix: several mod compatibility issues
+-- hange: avoid Stream API in fire/lava check in Entity movement code
+-- change: split alloc.enum_values package to allow disabling single mixins
 
-- Expanded Storage: 8.1.0-beta.5 -> 8.2.0-beta.3
-- v.8.2.0-beta.1
--- Rewrites how conversion kits and the storage mutator's swap theme function works to use datapack recipes instead of an in-code solution.
-- v.8.2.0-beta.3
--- Remove some dead code.
--- Added swap theme recipe for modelled -> old chest and back.
+- Macaw's Roofs: 2.2.2 -> 2.2.3
+-- Partially Fixed : Lower top and base roofs are broken
+-- Roof hammer resets blocks next door
+-- Visual bug on awkwardly placed blackstone roofs
+-- Non-Full Block Culling.
 
-- Extended Drawers: 1.3.6 -> 1.3.7
--- Add option to change item scale in client options
--- Add option to allow recursive storage in common options
--- Bump versions of multiple libraries
--- Clean up internals a bit
+- Macaw's Trapdoors: 1.0.8 -> 1.0.9
+ -  Bamboo Swamp Trapdoor and Bamboo Tropical Trapdoor have identical recipe
 
+ - MemoryLeakFix: 0.7.0 -> 0.8.0
+ -- A memory leak where entity memories where not being cleared when they died/got removed.
+ -- Issues with custom PacketByteBuf's
 
-- Farming for Blockheads: 11.1.0 -> 11.2.0
--- Added FeedingTroughEvent, which allows other mods to customize the feeding of their animals for special handling
--- Increased the default feedingTroughMaxAnimals from 8 to 24
--- Clarified in Feeding Trough tooltip that it will only feed animals that are ready to mate
--- Optimized the feeding trough's ability to detect whether animals are ready to mate
--- Added IC2 Classic Rubber Sapling to the market
--- Fixed missing language keys in Fabric config screen
--- Fixed DEFAULTMERCHANTNAMES falsely showing up on Fabric config screen
+- Roughly Enough Items:  9.1.591 -> 9.1.595
+-- No config provided
 
+- Spark: 1.10.29 -> 1.10.33
+- v1.10.33
+-- Close worker thread pool on profiler stop (#305, #298, #281)4 days ago
+- v1.10.32
+-- Don't use multi-release jar for websocket code9 days ago
+- v1.10.31
+-- Fix nukkit/waterdog repos9 days ago
+- v1.10.30
+-- Fix NPE in ClassFinder (#287)
 
-- FTB Quests: 4.8 -> 4.9
--- Merge pull request #671 from FTBTeam/1.19/dev - desht
--- feat: added tooltip for image config, click field - Des Herriott
--- build: depend on & require ftb library 1902.3.14-build.182 - Des Herriott
--- fix: allow markup text in chapter image tooltips - Des Herriott
--- build: version -> 1902.4.9, changelog updated - Des Herriott
--- fix: comparing NBT with data freshly loaded from disk - Des Herriott
+- Spectrum: 1.6.7 -> 1.6.8
+-- fixed Glow Phantom Frames dropping non-glowing ones
+-- fixed crash when drinking tea with a single scone
+-- fixed Ink color calculation & display in Color Picker
+-- fix Divinity crash on dedicated servers
+-- unified the way upgradeable trinkets calculate their values. All now cap out at 3276800 Ink
+-- Color Picker now stores 100x Ink
 
+- Supplementaries: 2.2.56 -> 2.2.58
+- v.2.2.58
+-- Fixed an hourglass issue
+-- added a soap recipe blacklist tag
+-- fixed an issue with allays and cages
+-- fixed turn table advancement
+- v.2.2.57
+-- better enderman head item renderer
+-- nasons will sell ash bricks
 
-- Megane: 8.3.0 -> 8.4.0
--- Re-added Create module
--- Re-added Deep Mob Learning module
--- Added Powah module
-
-
-- NetherPotralFix: 10.0.0 -> 10.0.1
--- Fixed crash if mods change player dimension during spawn
--- Fixed random nether portals being spawned in their expected Vanilla locations even if players are returned to their return portal
-
-
-- Spectrum: 1.6.6 -> 1.6.7
--- Fixed an XP Exploit in combination with Botanias Rosa Arcana
--- Fixed world hole when having the Spirit Instiller oriented in a certain direction
-
-
-- Starter Kit: 2.5.1 -> 2.5.2
--- Changed how delays are done within the mod. It now uses a tick event, instead of Thread.sleep.
-00 This improves compatibility with other mods.
-
-- Supplementaries: 2.2.50 -> 2.2.52
-- v.2.2.51
--- Cleaned up some configs. Changed a config category name, you might want to set those again
--- Fixed bamboo spikes not accepting potions
--- added integration with computercraft fabric
-- v.2.2.52
---  Hourglass timings and textures are now data driven through the hourglass_dusts folder
---  Fixed sacks overnecumbered not working
---  Added a tag that allows tagged item to act as full sacks, triggering overencumbered. Stack size affects the intensity
---  Fixed tipped spikes not working correctly
---  Sacks and presents can be mined faster with shears
---  dispensers can once again fill jars
---  Faucets can empty and fill brewing stands
---  Sepia globes can be sheared
---  Double iron gates will open when powered by redstone
-- v.2.5.53
--- possibly fixed an issue on quilt
-- v.2.5.54
--- Added REI and JEI compatibility for special recipes
--- added raked gravel tilling recipe to REI
-
-
-- TrashSlot: 12.0.1 -> 12.0.2
--- Fixed incompatibility with ReplayMod
-
-
-- Toms Simple Storage: 1.5.0 -> 1.5.1
--- Fixed paint kit not working on Fabric (Closes #202)
--- Fixed terminal breaking with EMI (Closes #200)
--- Fixed crash with Inventory Cable Connector gui (Closes #203)
--- Fixed crash on 1.19.3 forge (Closes #204)
--- Fixed items not showing in terminals on forge (Closes #195)
-
-
-- WTHIT: 5.13.5 -> 5.14.0 
--- Added support for wthit_plugins.json as alternate plugin definitions file
--- Added missing Russian translations (#191)
--- Changed tooltip to be shown for further object if nearer object has its tooltip disabled (#187)
--- Changed tooltip to be properly hidden when F1 was pressed (#188)
-
-
-- YUNG's Better Desert Temples: 2.2.1 -> 2.2.2
--- Converted structure type to yungsapi:yung_jigsaw. 
--- Attempt to prevent temples from spawning too close to rivers and oceans. 
--- Decreased min height offset to -30, allowing pyramids to be a little more buried. 
-
-- Visual Workbench: 4.2.2 -> 4.2.3
--- Fixed an issue with the Tetra mod where their workbench block couldn't be created by clicking on a crafting table with a hammer
+- Tom's Simple Storage: 1.5.1 -> 
+-- Added toggle ghost mode button (Closes #208)
+-- Fixed crafting terminal recipe book not working (Closes #210)
+-- Fixed priority not working (Closes #207)
+-- Fixed right click not pulling half of the stack (Closes #208)
+-- Improved Crafting Terminal Refill Speed (Closes #213)
+-- Fixed JEI not working on Fabric 1.19.2
+-- Fixed Polymorphic Item Filter not working in some cases (Closes #214
+-- Added toggle ghost mode button (Closes #208)
+-- Added toggle ghost mode button (Closes #208)

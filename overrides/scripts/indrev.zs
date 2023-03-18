@@ -1,5 +1,3 @@
-print("Loading indrev.zs");
-
 val empty = <item:minecraft:air>;
 
 val flint = <item:minecraft:flint>;

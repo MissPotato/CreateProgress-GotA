@@ -2,8 +2,6 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.data.IData;
 
-print("Loading condensing.zs");
-
 function addIndrevCondensing(name as string, fluid as string, amount as int, itemOut as IIngredient) as void {
   <recipetype:indrev:condenser>.addJsonRecipe(name, {
     "type": "indrev:condenser",

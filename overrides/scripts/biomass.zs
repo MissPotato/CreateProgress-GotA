@@ -7,8 +7,6 @@ import crafttweaker.api.item.ItemDefinition;
 import crafttweaker.api.tag.type.KnownTag;
 import crafttweaker.api.util.Many;
 
-print("Loading biomass.zs");
-
 <recipetype:indrev:recycle>.removeAll();
 
 function addBiomassRecipe(name as string, ingredients as IIngredientWithAmount[], itemOut as IIngredientWithAmount) as void {

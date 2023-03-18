@@ -2,8 +2,6 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.data.IData;
 
-print("Loading melting.zs");
-
 function addIndrevMetalMelting(name as string) as void {
 	val prefix = "molten_" + name;
 	val fluid = "kubejs:molten_" + name;

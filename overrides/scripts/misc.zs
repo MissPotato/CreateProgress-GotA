@@ -1,7 +1,5 @@
 import crafttweaker.api.recipe.FurnaceRecipeManager;
 
-print("Loading misc.zs");
-
 val empty = <item:minecraft:air>;
 
 val stick = <item:minecraft:stick>;

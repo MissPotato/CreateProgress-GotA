@@ -1,7 +1,5 @@
 import crafttweaker.api.tag.MCTag;
 
-print("Loading Tags.zs");
-
 <tag:blocks:c:ores>.add(<block:indrev:nikolite_ore>);
 <tag:blocks:c:ores>.add(<block:indrev:deepslate_nikolite_ore>);
 <tag:blocks:c:ores>.add(<block:indrev:tungsten_ore>);
@@ -11,6 +9,9 @@ print("Loading Tags.zs");
 <tag:blocks:crafttweaker:veinmine>.add(<block:create:ochrum>);
 <tag:blocks:crafttweaker:veinmine>.add(<block:create:crimsite>);
 <tag:blocks:crafttweaker:veinmine>.add(<block:create:limestone>);
+<tag:blocks:crafttweaker:veinmine>.add(<block:create:veridium>);
+<tag:blocks:crafttweaker:veinmine>.add(<block:twigs:rhyolite>);
+<tag:blocks:crafttweaker:veinmine>.add(<block:create:asurine>);
 <tag:blocks:crafttweaker:veinmine>.add(<block:minecraft:glowstone>);
 <tag:blocks:crafttweaker:veinmine>.add(<block:minecraft:clay>);
 <tag:blocks:crafttweaker:veinmine>.add(<block:minecraft:mangrove_roots>);
@@ -22,6 +23,13 @@ print("Loading Tags.zs");
 <tag:blocks:ae2:growth_acceleratable>.add(<block:spectrum:budding_topaz>);
 <tag:blocks:ae2:growth_acceleratable>.add(<block:spectrum:budding_citrine>);
 <tag:blocks:ae2:growth_acceleratable>.add(<block:spectrum:budding_onyx>);
+
+<tag:items:c:uraninite_ores_poor>.add(<item:powah:uraninite_ore_poor>);
+<tag:items:c:uraninite_ores_poor>.add(<item:powah:deepslate_uraninite_ore_poor>);
+<tag:items:c:uraninite_ores_standard>.add(<item:powah:uraninite_ore>);
+<tag:items:c:uraninite_ores_standard>.add(<item:powah:deepslate_uraninite_ore>);
+<tag:items:c:uraninite_ores_dense>.add(<item:powah:uraninite_ore_dense>);
+<tag:items:c:uraninite_ores_dense>.add(<item:powah:deepslate_uraninite_ore_dense>);
 
 //budding
 <tag:blocks:spectrum:budding_blocks>.add(<block:geodes:budding_emerald>);
@@ -38,4 +46,23 @@ print("Loading Tags.zs");
 <tag:items:c:netherite_bars>.add(<item:createdeco:netherite_bars>);
 <tag:items:c:netherite_bars>.add(<item:charm:netherite_bars>);
 <tag:items:c:cast_iron_bars>.add(<item:createdeco:cast_iron_bars>);
+
+// dank blacklist
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:baby_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:ender_pouch>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:frayed_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:plated_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:gilded_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:bejeweled_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:blazing_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:withered_backpack>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:inmis:endless_backpack>);
+
+<tag:items:dankstorage:blacklisted_usage>.add(<item:spiceoffabric:picnic_basket>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:spiceoffabric:paper_bag>);
+<tag:items:dankstorage:blacklisted_usage>.add(<item:spiceoffabric:lunch_box>);
+
+<tag:items:dankstorage:blacklisted_usage>.add(<item:botania:flower_bag>);
+
+<tag:items:dankstorage:blacklisted_usage>.add(<item:create:experience_nugget>);
 

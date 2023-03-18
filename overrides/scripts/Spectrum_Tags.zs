@@ -1,5 +1,3 @@
-print("Loading Spectrum_Tags.zs");
-
 import crafttweaker.api.tag.MCTag;
 <tag:blocks:spectrum:ruin_safe>.add(<block:botania:elf_glass>);
 <tag:blocks:spectrum:failing_safe>.add(<block:botania:elf_glass>);

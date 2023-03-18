@@ -3,8 +3,6 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.IIngredientWithAmount;
 import crafttweaker.api.data.IData;
 
-print("Loading module_crafting.zs");
-
 function addModuleRecipe(
   name as string, 
   itemsIn as IIngredient[], 

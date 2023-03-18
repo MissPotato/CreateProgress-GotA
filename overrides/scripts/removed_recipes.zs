@@ -1,5 +1,3 @@
-print("Loading removed_recipes.zs");
-
 // pipes
 craftingTable.remove(<item:indrev:fluid_pipe_mk1>);
 craftingTable.remove(<item:indrev:fluid_pipe_mk2>);

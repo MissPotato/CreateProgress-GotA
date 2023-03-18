@@ -1,5 +1,3 @@
-print("Loading Botania.zs");
-
 val empty = <item:minecraft:air>;
 
 //remove tiara

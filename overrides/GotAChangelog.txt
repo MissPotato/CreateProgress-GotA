@@ -1,4 +1,58 @@
+Progress Create: GotA Edition v0.4.5.1
+#GotA Additions#
+This update updates the base pack, the mods, and includeds the quests for GotA specific mods and testing out Incantations. Both Incantations are to try and make death less annoying, as dying often meant spending a long time just sitting at your fridge waiting for hunger to go down. Please offer any feedback on incantations as it is a system I plan on expanding for other packs. See the GotAChangelog for more info! (That's this file smileEmoji)
+
+Incantations:
+- Extreme Starve: Gives the player 5 minutes of Hunger 10. 
+- Reawaken: Runs the spice of life command to update health (no need to relog for more health)
+
+Removed Mods:
+- Chunk Sending: Was included upstream
+- Connectivity: Was included upstream
+
+
+Updated GotA Specific mods:
+- Immersive Paintings: 0.4.9 -> 0.5.1
+- v.0.5.1
+-- Fixed issue with the cache and exception spam
+- v0.5.0
+-- Added graffiti, transparent paintings without canvas
+-- Fixed typos
+-- Resizing the window no longer resets the editor screen
+-- Fixed networking issues
+-- Fixed exception spam
+-- Fixed excessive CPU usage in editor
+-- Fixed black line
+-- Fixed some editor pixelator artifacts
+
+
+- Portable Tables: 2.0 -> 2.2
+-- Fix typo in Smithing Table tooltip
+-- Fixed sometimes getting kicked on servers when opening a portable table.
+-- Portable Tables no longer can be stacked. (Excluding the portable bell)
+-- Added simplified chinese translation (Credit to ChromaPIE)
+
+- Updated Progress Create
+- 0.4.1 -> 0.4.5
+- Implemented unreleased changes
+-- More veinminer support
+-- Dupe fixes
+-- Rhyolte grinding recipe 
+#Changelog for Progeess Create base pack#
+
+Added: Concrete Plus
+Added: Connectivity
+Added: Chunk Sending
+Updated: Ad Astra
+Changed: Added Uraninite ores to mining rig
+Changed: Slightly reduce mining rig output
+Changed: Enabled vertical slabs from dustrial decor
+Changed: Unhide Powah cables from REI
+
+
+########################################################
 Progress Create: GotA Edition v0.4.1.2
+#GotA Additions#
 - Downgraded expanded storage
 - Fixed a few CT recipes
 - Added debug code to CT SCripts

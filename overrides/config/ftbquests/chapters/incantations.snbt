@@ -1,0 +1,85 @@
+{
+	id: "0C0DDF699A5BD4AD"
+	group: "684BCB37FDC5EE71"
+	order_index: 1
+	filename: "incantations"
+	title: "Incantations"
+	icon: {
+		id: "wands:iron_wand"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: [" While I could not make it to this plane with you, *cough* I can still augment it from back here. Utilizing the GUIDE I can channel technomagic to you, in exchange for only the reagents. Considering it a \"Don't tell me boss that I got you stuck here\" pay plan. \\n\\n  Provide me with the goods and I will be able to augment you or the world around you."]
+			id: "3241ADDE5DB7A7C6"
+			tasks: [{
+				id: "603688F001256963"
+				type: "checkmark"
+				title: "What are incantations?"
+			}]
+		}
+		{
+			title: "Extreme Hunger"
+			x: -1.0d
+			y: 1.5d
+			subtitle: "Tired of waiting to eat?"
+			description: [" You want to what? Did I hear that right? Extreme Starve?! I suppose I could uh... \\n\\n Ah, I've got it! Provide me with rotten flesh block and I'll amplify the hungering properties for you. I still don't know why you would want this..."]
+			dependencies: ["3241ADDE5DB7A7C6"]
+			hide: true
+			can_repeat: true
+			id: "651F23F61CCADD88"
+			tasks: [{
+				id: "0D785A42FAE609AF"
+				type: "item"
+				disable_toast: true
+				item: "architects_palette:rotten_flesh_block"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "24CA122CE92B680A"
+					type: "command"
+					command: "/effect give @p hunger 300 9"
+					player_command: false
+				}
+				{
+					id: "425A6020ED47EDE4"
+					type: "command"
+					team_reward: false
+					auto: "disabled"
+					command: "/effect give @p poison 300 9"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Reawaken"
+			x: 1.0d
+			y: 1.5d
+			subtitle: "Why relog to update health?"
+			description: [" You find yourself feeling significantly stronger upon reawakening in the plane? Interesting... \\n\\n I could possibly simulate that without reagents..."]
+			dependencies: ["3241ADDE5DB7A7C6"]
+			can_repeat: true
+			id: "4650EFCE95F8E81C"
+			tasks: [{
+				id: "42B9459EF88A3174"
+				type: "checkmark"
+				title: "Update Health"
+			}]
+			rewards: [{
+				id: "0639C0975A053C08"
+				type: "command"
+				command: "/spiceoffabric:update_max_health @p"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -3,8 +3,6 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.IIngredientWithAmount;
 import crafttweaker.api.data.IData;
 
-print("Loading pressing.zs");
-
 function addCreatePressing(name as string, itemIn as IIngredient, itemOut as IIngredient) as void {
   <recipetype:create:pressing>.addJsonRecipe(name, {
     "type": "create:pressing",

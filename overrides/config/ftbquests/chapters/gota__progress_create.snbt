@@ -1,0 +1,149 @@
+{
+	id: "77213F1E50E002A5"
+	group: "684BCB37FDC5EE71"
+	order_index: 0
+	filename: "gota__progress_create"
+	title: "GotA + Progress Create"
+	icon: "botania:rosa_arcana"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "supplementaries:speaker_block"
+			x: 0.0d
+			y: 0.0d
+			description: [" Oh the AM is going to kill me... Wait, I see signs of life on the GUIDE... \\n\\n Hello? You there?  \\n ... \\n\\n Ah good, you're still alive! The rift collapsed soon as you stepped through. I told those Botanical mages the tech wasn't there yet! Anywho, you're still alive, that's the good news. \\n\\n Well, seeing as you're there... "]
+			id: "1638031F65B0359D"
+			tasks: [{
+				id: "430A578DF0A1F87C"
+				type: "checkmark"
+				title: "Can you hear me?"
+			}]
+		}
+		{
+			title: "Claytainment"
+			x: -1.5d
+			y: 0.0d
+			description: ["Oh these little guys! I haven't seen them in aeons... We used to watch these guys battle it out in mass wars. Would even place bets on which color would win."]
+			dependencies: ["1638031F65B0359D"]
+			id: "7618AD3DA9F5DAF8"
+			tasks: [{
+				id: "10B7DB2EA9644241"
+				type: "item"
+				item: "clay:soldier/clay"
+			}]
+			rewards: [{
+				id: "4A639C0B4BEB923B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: [" You can't crawl on demand? What kind of tomfoolery is this... \\n\\n((Keybind for crawling has been added but is not bound by default.))"]
+			dependencies: ["1638031F65B0359D"]
+			id: "68282D5F8B9F8411"
+			tasks: [{
+				id: "370B05BCFB5A7311"
+				type: "checkmark"
+				title: "Crawling"
+			}]
+		}
+		{
+			icon: "minecraft:spawner"
+			x: -1.0d
+			y: 1.5d
+			description: [" You know my fascination with animals? Well... I think it would be Ecologic(al) if the Naturalist in you found some Creatures From The Snow."]
+			dependencies: ["1638031F65B0359D"]
+			id: "625475A650639788"
+			tasks: [{
+				id: "3A1F09561A4B2584"
+				type: "checkmark"
+				title: "Animalistic Calling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: [" One of the earliest augments we're taught is to bend the will of a compass to respond to the energies of nature instead of magnetic fields."]
+			dependencies: ["1638031F65B0359D"]
+			id: "42D4512F35285807"
+			tasks: [{
+				id: "48D800E7901DE755"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "3C465B9D49BEBF69"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["1638031F65B0359D"]
+			id: "2126F3E33BA2208B"
+			tasks: [{
+				id: "7E3116D06DE6365D"
+				type: "checkmark"
+				title: "Plane Augmentation"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: [" I've ripped apart the fabric of reality to allow natural containers to pull uniue loot for you."]
+			dependencies: ["2126F3E33BA2208B"]
+			id: "19D2F33A05E78D86"
+			tasks: [{
+				id: "65EAAD920BEF3FDC"
+				type: "observation"
+				timer: 0L
+				observe_type: 0
+				to_observe: "lootr:chest"
+			}]
+			rewards: [{
+				id: "5C6701D70E27B523"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			icon: "fwaystones:waystone"
+			x: -1.5d
+			y: -2.0d
+			description: [" What would the organization's leading plane teleportation researcher, Roland Emmerich, be without a bit of teleportation magic?"]
+			dependencies: ["2126F3E33BA2208B"]
+			id: "5C7E185FE6DFD061"
+			tasks: [{
+				id: "367E9B14E4D46B12"
+				type: "checkmark"
+				title: "Cheapened Travels"
+			}]
+			rewards: [{
+				id: "48AF8F9DC70E0156"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			description: ["Look, I ain't even going to be in character for this one. This mod has been a pain to get to behave in an even remotely enjoyably way. Pretty much the entire mod is turned off becasue a lot of it is broken in multiplayer. Pretty much the only thing still enabled is 10 unique foods = 1 additional hp. Dying resets your max hp counter and unique food counter. Check out incantations for some help."]
+			dependencies: ["2126F3E33BA2208B"]
+			id: "3F418F5B235D572D"
+			tasks: [{
+				id: "5B2F97EA739AD218"
+				type: "checkmark"
+				title: "Spice of Fabric"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
